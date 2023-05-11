@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { CarouselThreeComponent } from './carousel-three.component';
+
+describe('CarouselThreeComponent', () => {
+  let component: CarouselThreeComponent;
+  let fixture: ComponentFixture<CarouselThreeComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ CarouselThreeComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(CarouselThreeComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

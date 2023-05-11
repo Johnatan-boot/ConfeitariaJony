@@ -1,0 +1,107 @@
+nav a{
+
+  color: #fff;
+ }
+
+
+ nav .nav-link {
+  color: #fff;
+ }
+ nav .navbar-brand {
+  position: relative;
+  left: 15%;
+  font-family: 'Passions Conflict', cursive, sans-serif;
+  font-size: 2.3em;
+  color: #fff;
+ }
+ nav .navbar-brand:hover {
+  color: rgb(126,105,173);
+  color: linear-gradient(90deg, rgba(126,105,173,1)
+  0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
+ }
+ .navbar{
+  background-color: #a986fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  width: 100%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+ul .dropdown-item{
+  color: black;
+}
+
+ul .nav-item{
+position: relative;
+left: 85%;
+}
+
+.container_btn{
+  position: relative;
+  left: 110%;
+}
+
+
+ .btn-primary.btn-success .btn-info{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+
+
+}
+
+.btn-primary {
+  margin-right: 5px;
+  background-color: #ff016b;
+  border: 1px solid #ff016b;
+}
+.btn-primary:hover {
+
+  background-color: #fff;
+  border: 1px solid #ff016b;
+  color: #ff016b;
+}
+
+.btn-success{
+  margin-right: 5px;
+
+  background-color: #03fc4e;
+  border: 1px solid #03fc4e;
+}
+.btn-success:hover {
+  color: #03fc4e;
+  background-color: #fff;
+  border: 1px solid #03fc4e
+}
+
+.btn-info{
+  background-color: #6745fc;
+  color: #fff;
+  border: 1px solid #6745fc;
+
+}
+.btn-info:hover {
+  background-color: #fff;
+  color: #6745fc;
+  border: 1px solid #6745fc;
+}
+
+.btn-form{
+  background: rgb(126,105,173);
+  background: linear-gradient(90deg, rgba(126,105,173,1)
+  0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
+  color: #fff;
+  font-weight: 700;
+
+
+}
+
+

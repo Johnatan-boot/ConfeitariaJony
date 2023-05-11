@@ -1,0 +1,103 @@
+.container-sm {
+  border-radius: 20px;
+
+  background-color: #c7c0c0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+
+  position: relative;
+  bottom: 50px;
+  background-color: #c7c0c0;
+
+  border: 2px solid gray;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  height: 700px;
+  border-radius: 20px;
+}
+
+.title_form {
+  color: gray;
+  font-weight: 900;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 1px #111111;
+  padding-top: 10px;
+  font-family: "Passions Conflict", cursive, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem_header_form {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 0.9em;
+}
+
+#label_senha {
+  position: relative;
+  right: 13px;
+}
+
+form input {
+  background-color: #e2dddd;
+  border: 1px solid black;
+  position: relative;
+  right: 20%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+}
+
+#exampleFormControlInput1 {
+  width: 99%;
+  margin-left: 20%;
+}
+
+.btn-success {
+  border: 1px solid #03fc4e;
+  background-color: #03fc4e;
+
+  font-size: 1em;
+  font-weight: 900;
+  border: 1px solid black;
+  margin-right: 50px;
+  width: 97%;
+}
+
+.btn-success:hover {
+  color: #03fc4e;
+  background-color: #fff;
+  border: 1px solid #03fc4e;
+}
+
+.form-text,
+.btn-success {
+  position: relative;
+  top: 60px;
+}
+
+.form-text{
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+

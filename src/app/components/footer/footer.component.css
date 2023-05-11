@@ -1,0 +1,40 @@
+footer{
+
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.footer{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  text-align: center;
+  position: relative;
+  top: 900px;
+  height: 100px;
+  width: 100%;
+  background-color: #a986fa;
+}
+
+footer h6{
+  text-decoration: none;
+  padding-top: 5px;
+  font-size: 0.8em;
+
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+span{
+  position: relative;
+  left: 35%;
+position: relative;
+bottom: 10px;
+font-weight: 300;
+color: #fff;
+}
