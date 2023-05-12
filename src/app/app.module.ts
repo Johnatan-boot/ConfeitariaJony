@@ -27,6 +27,10 @@ import { CartComponent } from './components/pages/cart/cart.component';
 import { CartRoutingModule } from './components/pages/cart/cart-routing.module';
 import { BolosTradcionaisComponent } from './components/pages/bolos-tradcionais/bolos-tradcionais.component';
 import { BolosTradcionaisRoutingModule } from './components/pages/bolos-tradcionais/bolos-trad.routing.module';
+import { BolosCoberturaComponent } from './components/pages/bolos-cobertura/bolos-cobertura.component';
+import { BolosCoberturaRoutingModule } from './components/pages/bolos-cobertura/bolos-trad.routing.module';
+import { BolosFestasComponent } from './components/pages/bolos-festas/bolos-festas.component';
+import { BolosFestasRoutingModule } from './components/pages/bolos-festas/bolos-trad.routing.module';
 
 @NgModule({
   declarations: [
@@ -46,11 +50,15 @@ import { BolosTradcionaisRoutingModule } from './components/pages/bolos-tradcion
     CardProductsComponent,
     CadastroUComponent,
     CartComponent,
-    BolosTradcionaisComponent
+    BolosTradcionaisComponent,
+    BolosCoberturaComponent,
+    BolosFestasComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    BolosFestasRoutingModule,
+    BolosCoberturaRoutingModule,
     BolosTradcionaisRoutingModule,
     CartRoutingModule,
     CadastroURoutingModule,
