@@ -25,6 +25,8 @@ import { CadastroUComponent } from './components/pages/cadastro-u/cadastro-u.com
 import { CadastroURoutingModule } from './components/pages/cadastro-u/cadastro-u-routing.module';
 import { CartComponent } from './components/pages/cart/cart.component';
 import { CartRoutingModule } from './components/pages/cart/cart-routing.module';
+import { BolosTradcionaisComponent } from './components/pages/bolos-tradcionais/bolos-tradcionais.component';
+import { BolosTradcionaisRoutingModule } from './components/pages/bolos-tradcionais/bolos-trad.routing.module';
 
 @NgModule({
   declarations: [
@@ -43,11 +45,13 @@ import { CartRoutingModule } from './components/pages/cart/cart-routing.module';
     CartSocialComponent,
     CardProductsComponent,
     CadastroUComponent,
-    CartComponent
+    CartComponent,
+    BolosTradcionaisComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    BolosTradcionaisRoutingModule,
     CartRoutingModule,
     CadastroURoutingModule,
     ProductsRoutingModule,

@@ -7,7 +7,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #cfc0f1;
-
 }
 .container {
   position: relative;
@@ -18,7 +17,6 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #cfc0f1;
-
 }
 .content {
   background-color: #fff;
@@ -29,17 +27,21 @@ body {
   align-items: center;
   position: relative;
   bottom: 100px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .content::before {
   content: "";
   position: absolute;
   /*background-color: #58af9b;*/
-  background: rgb(126,105,173);
-  background: linear-gradient(90deg, rgba(126,105,173,1)
-  0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
+  background: rgb(126, 105, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 105, 173, 1) 0%,
+    rgba(178, 158, 224, 1) 35%,
+    rgba(219, 206, 249, 1) 100%
+  );
   width: 40%;
   height: 100%;
   border-top-left-radius: 15px;
@@ -48,13 +50,12 @@ body {
   left: 0;
 }
 .title {
-
   font-size: 28px;
   font-weight: bold;
   text-transform: capitalize;
 }
 .title-primary {
-  font-family: 'Passions Conflict', cursive, sans-serif;
+  font-family: "Passions Conflict", cursive, sans-serif;
   color: #fff;
 }
 .title-second {
@@ -249,263 +250,4 @@ input:-webkit-autofill {
   position: relative;
   z-index: -1;
   animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-}
-
-/*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
-
-@keyframes deslocamentoEsq {
-  from {
-    left: 0;
-    opacity: 1;
-    z-index: 12;
-  }
-
-  25% {
-    left: -80px;
-    opacity: 0.5;
-    /* z-index: 12; NÃO HÁ NECESSIDADE */
-  }
-
-  50% {
-    left: -100px;
-    opacity: 0.2;
-    /* z-index: 12; NÃO HÁ NECESSIDADE */
-  }
-
-  to {
-    left: -110px;
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-@keyframes deslocamentoDir {
-  from {
-    left: 0;
-    z-index: 12;
-  }
-
-  25% {
-    left: 80px;
-    /* z-index: 12;  NÃO HÁ NECESSIDADE*/
-  }
-
-  50% {
-    left: 100px;
-    /* z-index: 12; NÃO HÁ NECESSIDADE*/
-    /* background-color: yellow;  Exemplo que dei no vídeo*/
-  }
-
-  to {
-    left: 110px;
-    z-index: -1;
-  }
-}
-
-/*ANIMAÇÃO CSS*/
-
-@keyframes slidein {
-  from {
-    left: 0;
-    width: 40%;
-  }
-
-  25% {
-    left: 5%;
-    width: 50%;
-  }
-
-  50% {
-    left: 25%;
-    width: 60%;
-  }
-
-  75% {
-    left: 45%;
-    width: 50%;
-  }
-
-  to {
-    left: 60%;
-    width: 40%;
-  }
-}
-
-@keyframes slideout {
-  from {
-    left: 60%;
-    width: 40%;
-  }
-
-  25% {
-    left: 45%;
-    width: 50%;
-  }
-
-  50% {
-    left: 25%;
-    width: 60%;
-  }
-
-  75% {
-    left: 5%;
-    width: 50%;
-  }
-
-  to {
-    left: 0;
-    width: 40%;
-  }
-}
-
-/*VERSÃO MOBILE*/
-@media screen and (max-width: 1040px) {
-  .content {
-    width: 100%;
-    height: 100%;
-  }
-
-  .content::before {
-    width: 100%;
-    height: 40%;
-    top: 0;
-    border-radius: 0;
-  }
-  .first-content,
-  .second-content {
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .first-column,
-  .second-column {
-    width: 100%;
-  }
-
-  .sign-in-js .content::before {
-    top: 60%;
-    left: 0;
-    border-radius: 0;
-  }
-
-  .form {
-    width: 90%;
-  }
-
-  /* ANIMAÇÃO MOBILE CSS*/
-
-  @keyframes deslocamentoEsq {
-    from {
-      top: 0;
-      opacity: 1;
-      z-index: 12;
-    }
-
-    25% {
-      top: -80px;
-      opacity: 0.5;
-      /* z-index: 12; NÃO HÁ NECESSIDADE */
-    }
-
-    50% {
-      top: -100px;
-      opacity: 0.2;
-      /* z-index: 12; NÃO HÁ NECESSIDADE */
-    }
-
-    to {
-      top: -110px;
-      opacity: 0;
-      z-index: -1;
-    }
-  }
-
-  @keyframes deslocamentoDir {
-    from {
-      top: 0;
-      z-index: 12;
-    }
-
-    25% {
-      top: 80px;
-      /* z-index: 12;  NÃO HÁ NECESSIDADE*/
-    }
-
-    50% {
-      top: 100px;
-      /* z-index: 12; NÃO HÁ NECESSIDADE*/
-      /* background-color: yellow;  Exemplo que dei no vídeo*/
-    }
-
-    to {
-      top: 110px;
-      z-index: -1;
-    }
-  }
-
-  @keyframes slidein {
-    from {
-      top: 0;
-      height: 40%;
-    }
-
-    25% {
-      top: 5%;
-      height: 50%;
-    }
-
-    50% {
-      top: 25%;
-      height: 60%;
-    }
-
-    75% {
-      top: 45%;
-      height: 50%;
-    }
-
-    to {
-      top: 60%;
-      height: 40%;
-    }
-  }
-
-  @keyframes slideout {
-    from {
-      top: 60%;
-      height: 40%;
-    }
-
-    25% {
-      top: 45%;
-      height: 50%;
-    }
-
-    50% {
-      top: 25%;
-      height: 60%;
-    }
-
-    75% {
-      top: 5%;
-      height: 50%;
-    }
-
-    to {
-      top: 0;
-      height: 40%;
-    }
-  }
-}
-
-@media screen and (max-width: 740px) {
-  .form {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .form {
-    width: 100%;
-  }
 }
