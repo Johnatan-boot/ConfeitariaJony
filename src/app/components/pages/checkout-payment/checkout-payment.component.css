@@ -1,0 +1,20 @@
+.container{
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card{
+  color: #807b7b;
+  width: 102%;
+  border-radius: 20px;
+}
+
+.btn{
+
+  border-radius: 20px;
+
+  margin-bottom: 15px;
+}

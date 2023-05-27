@@ -1,0 +1,284 @@
+.card-top {
+  height: 100px;
+  color: white;
+  font-family: segoe script;
+  position: relative;
+  bottom:70px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: rgb(48, 38, 26);
+  word-wrap: break-word;
+  background-clip: border-box;
+  background-color: rgb(48, 38, 26);
+  border-radius: .25rem;
+}
+
+.item img {
+  margin-bottom: 0px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 20%;
+  top: 30px;
+  margin: 0px 15px;
+  text-align: center;
+}
+
+h6{
+margin-top: 0;
+  font-size: 0.9em;
+
+}
+
+.item a:hover {
+  color: white;
+}
+
+.card {
+  text-align: center;
+  width: 200px;
+  font-size: 10px;
+  position: relative;
+  right: 60px;
+  bottom: 150px;
+  color: white;
+  background-color: rgb(48, 38, 26);
+  padding: 20px;
+  margin: 50px;
+  margin-right: -40px;
+  margin-bottom: -30px;
+}
+h5{
+    font-size: 0.8em;
+
+}
+
+.card img {
+  position: relative;
+  left: 50px;
+  width: 60px;
+  height: 50px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.btn{
+  font-size: 10px;
+  width: 80px;
+  position: relative;
+  left: 40px;
+  background-color: #2adbe7;
+  color: white;
+}
+.btn:hover{
+
+  color: rgb(48, 38, 26);
+}
+
+
+@media (min-width: 320px) and (max-width: 720px){
+
+
+  .card-top {
+    width: 280px;
+    color: white;
+    font-family: segoe script;
+    position: relative;
+    bottom: 80px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: rgb(48, 38, 26);
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+  }
+
+  .item img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right:70px;
+    border-radius: 8px;
+  }
+
+  .item {
+    margin: 0px 12px;
+    text-align: center;
+
+  }
+
+  .item a:hover {
+    color: white;
+    font-size: 10px;
+
+  }
+
+
+  h6{
+    font-size: 8px;
+    margin-top: 8px;
+    position: relative;
+    right: 70px;
+    bottom: 10px;
+  }
+
+  .card {
+    text-align: center;
+    width: 88px;
+    height: 100px;
+    font-size: 10px;
+    position: relative;
+    right: 14px;
+    bottom: 130px;
+    color: white;
+    background-color: rgb(48, 38, 26);
+    padding: 20px;
+    margin: 50px;
+    margin-right: -40px;
+    margin-bottom: -30px;
+  }
+
+  .card img {
+    position: relative;
+    left: 0px;
+    bottom: 15px;
+    width: 45px;
+    height: 40px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+
+  .card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  p{
+    position: relative;
+    bottom: 50px;
+    font-size: 9px;
+  }
+  .btn{
+    font-size: 10px;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    left: -15px;
+    bottom: 60px;
+    background-color: #2adbe7;
+    color: white;
+  }
+  .btn:hover{
+
+    color: rgb(48, 38, 26);
+  }
+
+
+
+
+}
+
+
+
+
+
+img{
+  position: relative;
+  bottom: 90px;
+  width: 100%;
+  height: 200px;
+}
+
+.title_products{
+  text-shadow: 1px 1px 1px #111111;
+  font-family: 'Passions Conflict', cursive, sans-serif;
+  position: relative;
+  bottom: 90px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+
+}
+.title_products:hover{
+  color: rgb(126,105,173);
+  color: linear-gradient(90deg, rgba(126,105,173,1)
+  0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
+
+}
+
+.container-sm{
+  position: relative;
+  bottom: 90px;
+  color: #fff;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 20px;
+  border: 2px solid gray;
+  height: 200px;
+  background-color: #382a2a;
+  margin-bottom: 10px;
+}
+
+.container-sm:hover{
+
+  background-color: #584242;
+}
+
+.container_header{
+  height: 0px;
+}
+div .imagem_card_header{
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+  height: 80px;
+}
+
+
+.btn{
+  border: 1px solid black;
+  font-size: 0.6em;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12.5%;
+  width: 75%;
+  position: relative;
+  bottom: 10px;
+  margin-bottom: 5px;
+}
+
+div .pg_container{
+  color: rgb(126,105,173);
+  color: linear-gradient(90deg, rgba(126,105,173,1)
+  0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
+  margin-top: 100px;
+  font-size: 0.8em;
+
+}
+
+@media screen and(min-width:320px) {
+
+}

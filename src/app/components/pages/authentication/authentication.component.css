@@ -10,8 +10,8 @@ body {
 }
 .container {
   position: relative;
-
-  left: 7%;
+  top:5px;
+  left: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,4 +250,21 @@ input:-webkit-autofill {
   position: relative;
   z-index: -1;
   animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    position: relative;
+    top:5px;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cfc0f1;
+  }
+  .form {
+    width: 50%;
+  }
 }

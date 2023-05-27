@@ -19,7 +19,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button"
             data-bs-toggle="dropdown" aria-expanded="false"
-            routerLink="products">
+           routerLink="products">
               Produtos
             </a>
             <ul class="dropdown-menu">
@@ -41,14 +41,16 @@
 
             </button>
             <button class="btn btn-info">
-              <i class="fa fa-cart-plus"
+              <i  class="fa fa-cart-plus"
               aria-hidden="true" routerLink="cart"></i>
-
+              {{totalItem}}
             </button>
           </div>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2"
+          [(ngModel)]="searchTerm" (keyup)="search($event)"
+          type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-form" type="submit">Search</button>
         </form>
       </div>

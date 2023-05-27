@@ -6,11 +6,13 @@ img{
 }
 
 .title_products{
+
   text-shadow: 1px 1px 1px #111111;
   font-family: 'Passions Conflict', cursive, sans-serif;
   position: relative;
-  bottom: 90px;
-  font-size: 2.9em;
+  right: 40px;
+  bottom: 70px;
+  font-size: 2em;
   font-weight: 600;
   color: #fff;
 
@@ -22,9 +24,23 @@ img{
 
 }
 
-.container-sm{
+.col-3{
+  position:relative;
+  right:110px;
+  
+}
+
+.container{
   position: relative;
-  bottom: 90px;
+  left: 80px;
+  width:100%;
+}
+.container-sm {
+
+  position: relative;
+  left: 9px;
+  bottom: 70px;
+
   color: #fff;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -32,8 +48,10 @@ img{
   border-radius: 20px;
   border: 2px solid gray;
   height: 200px;
+  width: 100px;
   background-color: #382a2a;
   margin-bottom: 10px;
+  margin-right: 35px;
 }
 
 .container-sm:hover{
@@ -48,9 +66,24 @@ div .imagem_card_header{
   border-radius: 10px;
   position: relative;
   top: 10px;
-  height: 80px;
+  height: 50px;
+  width: 100px;
 }
 
+.preco{
+  position: relative;
+  bottom: 15px;
+}
+p,strong{
+
+  padding-top: 0px;
+  font-size: 0.8em;
+}
+
+h5{
+  position: relative;
+  top: 10px;
+}
 
 .btn{
   border: 1px solid black;
@@ -63,7 +96,7 @@ div .imagem_card_header{
   margin-left: 12.5%;
   width: 75%;
   position: relative;
-  bottom: 10px;
+  bottom: 25px;
   margin-bottom: 5px;
 }
 
@@ -71,8 +104,64 @@ div .pg_container{
   color: rgb(126,105,173);
   color: linear-gradient(90deg, rgba(126,105,173,1)
   0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
-  margin-top: 100px;
+  margin-top: 10px;
   font-size: 0.8em;
 
+}
+
+@media screen and (min-width:320px) {
+
+  .title_products{
+
+    text-shadow: 1px 1px 1px #111111;
+    font-family: 'Passions Conflict', cursive, sans-serif;
+    position: relative;
+    right: 80px;
+    bottom: 70px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+  
+  }
+
+  .container{
+    position: relative;
+    right: 20px;
+    width:97%;
+  }
+
+  .col-4{
+    position:relative;
+    right:110px;
+    
+  }
+  .container-sm {
+
+    position: relative;
+    right: 30px;
+    bottom: 70px;
+    font-size: 0.6em;
+    color: #fff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    border: 2px solid gray;
+    height: 150px;
+    width: 100px;
+    background-color: #382a2a;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+
+  div .imagem_card_header{
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    height: 30px;
+    width: 60px;
+  }
+  
 }
 

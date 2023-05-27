@@ -1,22 +1,8 @@
-.title_home{
-  font-family: 'Passions Conflict', cursive, sans-serif;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 3em;
-  color: #fff;
-}
-
-.main{
-  width: 100%;
-  height: 300px;
-  position: relative;
-  bottom: 70px;
-}
-
 .card{
-
+  position:relative;
+  bottom:60px;
+  margin-left: 2%;
+  width: 95%;
   background: rgb(126,105,173);
   background: linear-gradient(90deg, rgba(126,105,173,1)
   0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
@@ -24,102 +10,156 @@
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
- width: 90%;
- height: 670px;
+
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
- position: relative;
- left: 5%;
+
 }
 
 .container{
-  width: 700px;
-  position: relative;
-  top: 210px;
-  right: 10px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  margin-top: 0px;
+ margin-bottom: 0px;
+  width: 320px;
 }
 
-app-carousel-one {
-  padding-top: 30px;
-  padding-left: 70px;
+.container-sm{
+  
+  margin-bottom: 0px;
+  margin-top:20px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-color: #c995d3;
+  width: 160px;
+
+}
+
+iframe {
+  border-radius: 12px;
+
+  position: relative;
+  right: 200px;
+  padding-left: 0px;
+  padding-right: 9px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 50%;
+  align-items: center;
+  width: 250px;
   height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  float: left;
-}
-app-carousel-two {
-
-  position: relative;
-  top: 30px;
-  right: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  float: right;
-  margin-top:5px;
-  width: 50%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-img{
-
-  border-radius: 20px;
-  border: 2px solid gray;
-
-}
-
-div .container_Video{
-  width: 50%;
-  margin-top: 120px;
-  position: relative;
-  right: 7.5%;
-  float: left;
-}
-
-div iframe{
-  border-radius: 20px;
-  border: 2px solid gray;
- position: relative;
- right: 32.5%;
-}
 
 .container_Pedidos{
-  border-radius: 20px;
+  position: relative;
+  right: 72px;
+  margin-top: 10px;
+  border-radius: 8px;
   border: 2px solid gray;
   font-size: 0.8em;
-  padding-top: 10px;
   color: #fff;
   text-align: center;
-  position: relative;
-  right: 0.5%;
-  bottom: 110px;
-  float: right;
-  width: 48%;
-  height: 315px;
+
+  width: 285px;
+  height: 200px;
   background-color: #c995d3;
 }
+
 .container_Pedidos h2{
-  font-size: 1.3em;
+  font-size: 0.8em;
 
 }
 
 
+@media screen and(min-width:320px) {
+  .card{
+    position:relative;
+    bottom:60px;
+    margin-left: 5%;
+    width: 320px;
+    background: rgb(126,105,173);
+    background: linear-gradient(90deg, rgba(126,105,173,1)
+    0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  
+  }
+  
+  .container{
+    margin-top: 0px;
+   margin-bottom: 0px;
+    width: 320px;
+  }
+  
+  .container-sm{
+    
+    margin-bottom: 0px;
+    margin-top:20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: #c995d3;
+    width: 160px;
+  
+  }
+  
+  iframe {
+    border-radius: 12px;
+  
+    position: relative;
+    right: 200px;
+    padding-left: 0px;
+    padding-right: 9px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 100px;
+  }
+  .container{
+   
+    width: 320px;
+  }
+
+  .container-sm{
+    
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: #c995d3;
+    width: 140px;
+
+  }
+
+  .container_Pedidos{
+    position: relative;
+    right: 24px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+
+    width: 320px;
+    height: 100px;
+    background-color: #c995d3;
+  }
+
+  .container_Pedidos h2{
+    font-size: 0.8em;
+
+  }
+
+}

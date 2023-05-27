@@ -1,58 +1,14 @@
-div .card{
-  border-radius: 20px;
-position: relative;
-right: 30px;
-width: 1200px;
+.card{
+  background: rgb(126, 105, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 105, 173, 1) 0%,
+    rgba(178, 158, 224, 1) 35%,
+    rgba(219, 206, 249, 1) 100%
+  );
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
-.container{
-  position: relative;
-  bottom: 80px;
-}
- div img{
-
- border-radius: 20px;
- height: 300px;
-}
-
-.container-sm{
-
-  position: relative;
-  top: 100px;
-  color: #fff;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  border-radius: 20px;
-  border: 2px solid gray;
-  height: 300px;
-  background-color: #382a2a;
-}
-
-.container-sm:hover{
-
-  background-color: #584242;
-}
-
-.container-sm svg{
-  margin-top: 50px;
-}
 
 
-
-div .pg_container{
-  color: rgb(126,105,173);
-  color: linear-gradient(90deg, rgba(126,105,173,1)
-  0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
-  margin-top: 50px;
-}
-
-
-.pg_container{
-  font-family: 'Passions Conflict', cursive, sans-serif;
- font-size: 1.9em;
-  color: #fff;
-  text-align: center;
-}

@@ -18,7 +18,7 @@
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  height: 700px;
+  height: 800px;
   border-radius: 20px;
 }
 
@@ -39,10 +39,12 @@ form {
 }
 
 .imagem_header_form {
+ position: relative;
+ right: 20px;
   margin-bottom: 10px;
   border: 1px solid black;
   height: 300px;
-  width: 100%;
+  width: 106%;
   border-radius: 20px;
 }
 
@@ -65,11 +67,11 @@ form input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 97%;
+  width: 100%;
 }
 
 #exampleFormControlInput1 {
-  width: 99%;
+  width: 100%;
   margin-left: 20%;
 }
 
@@ -101,3 +103,84 @@ form input {
   margin-bottom: 10px;
 }
 
+
+@media screen and (min-width:320px) {
+  .form-text,
+  .btn-success {
+    position: relative;
+    bottom: 86px;
+    margin-left: 10px;
+  }
+
+form .imagem_header_form  {
+    position: relative;
+    right: 0px;
+     margin-bottom: 10px;
+     border: 1px solid black;
+     height: 300px;
+     width: 280px;
+     border-radius: 20px;
+   }
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width:768px) {
+
+  form{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-text,
+  .btn-success {
+    position: relative;
+    bottom: 86px;
+    margin-left: 10px;
+  }
+
+form .imagem_header_form  {
+    position: relative;
+
+     margin-bottom: 10px;
+     border: 1px solid black;
+     height: 300px;
+     width: 100%;
+     border-radius: 20px;
+   }
+
+   .btn-success{
+    width: 100%;
+    position: relative;
+    right: 10px;
+   }
+
+   .container-sm {
+    border-radius: 20px;
+
+    background-color: #c7c0c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+
+
+
+}

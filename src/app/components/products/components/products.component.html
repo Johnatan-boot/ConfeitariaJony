@@ -1,0 +1,40 @@
+<img src="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card-top container-fluid">
+        <div class="container d-flex">
+            <div class="item">
+                <a (click)="filter('')">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                    <h6>Todos Produtos</h6>
+                </a>
+            </div>
+            <div class="item">
+                <a   routerLinkActive="router-link-active"  routerLinkActive="router-link-active"  (click)="filter('bolostradcionais')">
+                    <img src="https://images.pexels.com/photos/1277202/pexels-photo-1277202.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <h6>Bolos Tradcionais</h6>
+                </a>
+            </div>
+            <div class="item">
+                <a (click)="filter('boloscobertura')">
+                    <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <h6>Bolos Com Cobertura</h6>
+                </a>
+            </div>
+            <div class="item">
+                <a (click)="filter('bolosfestas')">
+                    <img  src="https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <h6>Bolos Para Festas</h6>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<app-card-products></app-card-products>
