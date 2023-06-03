@@ -20,6 +20,8 @@ nav a{
   0%, rgba(178,158,224,1) 35%, rgba(219,206,249,1) 100%);
  }
  .navbar{
+  position: relative;
+  left: 5.3%;
   background-color: #a986fa;
   display: flex;
   flex-direction: column;
@@ -39,12 +41,12 @@ ul .dropdown-item{
 
 ul .nav-item{
 position: relative;
-left: 70%;
+left: 60%;
 }
 
 .container_btn{
   position: relative;
-  left: 70%;
+  left: 0%;
 }
 
 
@@ -117,6 +119,8 @@ left: 70%;
 }
 
 
+
+
 @media screen and (min-width:320px) {
   nav a{
 
@@ -142,6 +146,8 @@ left: 70%;
     position: relative;
     left: 20%;
   }
+
+ 
 }
 @media screen and (min-width:768px) {
   nav a{

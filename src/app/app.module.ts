@@ -1,3 +1,5 @@
+import { SidebarComponent } from './components/sidebar/components/sidebar-component';
+import { EstoqueRoutingModule } from './components/pages/estoque/estoque-routing.module';
 import { ProductsRoutingModule } from './components/products/products-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -38,10 +40,13 @@ import { CartComponent } from './components/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CheckoutPaymentComponent } from './components/pages/checkout-payment/checkout-payment.component';
 import { CheckoutPaymentRoutingModule } from './components/pages/checkout-payment/checkout-payment.module';
+import { TableEstoqueComponent } from './components/table-estoque/table-estoque.component';
+import { EstoqueComponent } from './components/pages/estoque/estoque.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SidebarComponent,
     HeaderComponent,
     FilterPipe,
     ProductsComponent,
@@ -62,14 +67,18 @@ import { CheckoutPaymentRoutingModule } from './components/pages/checkout-paymen
     BolosTradcionaisComponent,
     BolosCoberturaComponent,
     BolosFestasComponent,
-    CheckoutPaymentComponent
-  ],
+    CheckoutPaymentComponent,
+    TableEstoqueComponent,
+    EstoqueComponent,
+    ],
   imports: [
     BrowserModule,
     NgbModule,
+
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    EstoqueRoutingModule,
     CheckoutPaymentRoutingModule,
     BolosFestasRoutingModule,
     BolosCoberturaRoutingModule,
@@ -80,7 +89,8 @@ import { CheckoutPaymentRoutingModule } from './components/pages/checkout-paymen
     PerfilRoutingModule,
     AuthenticationRoutingModule,
     HomeRoutingModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
 
   ],
   providers: [],
