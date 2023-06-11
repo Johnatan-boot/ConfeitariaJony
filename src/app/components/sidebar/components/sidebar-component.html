@@ -6,7 +6,7 @@
           <i class="fa fa-times close-icon"></i>
       </button>
   </div>
-  <!--<ul class="sidenav-nav">
+ <ul class="sidenav-nav">
       <li class="sidenav-nav-item" *ngFor="let data of navData">
           <a class="sidenav-nav-link" [routerLink]="[data.routeLink]" routerLinkActive="active"
               [routerLinkActiveOptions]="{exact: true}">
@@ -15,7 +15,7 @@
                   {{data.label}}
               </span>
           </a>
-          <ul *ngIf="collapsed && data.submenuLevel1 && data.submenuLevel1.length > 0"
+          <!-- <ul *ngIf="collapsed && data.submenuLevel1 && data.submenuLevel1.length > 0"
               [ngStyle]="{'margin-left': '80px'}">
               <li *ngFor="let sub1 of data.submenuLevel1">
                   <a [routerLink]="[sub1.routeLink]">
@@ -30,8 +30,8 @@
                       </li>
                   </ul>
               </li>
-          </ul>
+          </ul>-->
       </li>
-  </ul>-->
+  </ul>
 </div>
 
