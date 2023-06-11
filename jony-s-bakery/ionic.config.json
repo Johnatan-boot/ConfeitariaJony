@@ -1,0 +1,7 @@
+{
+  "name": "jony´s-bakery",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
