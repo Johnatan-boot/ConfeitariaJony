@@ -24,6 +24,7 @@ import { CartSocialComponent } from './components/cart-social/cart-social.compon
 import { CardProductsComponent } from './components/card-products/card-products.component';
 import { CadastroUComponent } from './components/pages/cadastro-u/cadastro-u.component';
 import { CadastroURoutingModule } from './components/pages/cadastro-u/cadastro-u-routing.module';
+import { AdminRoutingModule } from './components/pages/admin/admin-routing.module';
 
 import { BolosTradcionaisComponent } from './components/pages/bolos-tradcionais/bolos-tradcionais.component';
 import { BolosTradcionaisRoutingModule } from './components/pages/bolos-tradcionais/bolos-trad.routing.module';
@@ -42,6 +43,10 @@ import { CheckoutPaymentComponent } from './components/pages/checkout-payment/ch
 import { CheckoutPaymentRoutingModule } from './components/pages/checkout-payment/checkout-payment.module';
 import { TableEstoqueComponent } from './components/table-estoque/table-estoque.component';
 import { EstoqueComponent } from './components/pages/estoque/estoque.component';
+import { AdminComponent } from './components/pages/admin/admin.component';
+import { UsuariosComponent } from './components/pages/usuarios/usuarios.component';
+import { UsuariosRoutingModule } from './components/pages/usuarios/usuarios-routing.module';
+import { AdminGuard } from './services/auth/admin-guard.service';
 
 @NgModule({
   declarations: [
@@ -70,6 +75,8 @@ import { EstoqueComponent } from './components/pages/estoque/estoque.component';
     CheckoutPaymentComponent,
     TableEstoqueComponent,
     EstoqueComponent,
+    AdminComponent,
+    UsuariosComponent,
     ],
   imports: [
     BrowserModule,
@@ -78,6 +85,8 @@ import { EstoqueComponent } from './components/pages/estoque/estoque.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    UsuariosRoutingModule,
+    AdminRoutingModule,
     EstoqueRoutingModule,
     CheckoutPaymentRoutingModule,
     BolosFestasRoutingModule,
@@ -93,7 +102,7 @@ import { EstoqueComponent } from './components/pages/estoque/estoque.component';
     NgbModule
 
   ],
-  providers: [],
+  //providers: [AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

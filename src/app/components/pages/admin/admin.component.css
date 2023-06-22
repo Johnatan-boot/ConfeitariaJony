@@ -1,0 +1,30 @@
+.card{
+  margin-top: 20px;
+
+  border: 2px solid grey;
+  height: 200px;
+  color: #fff;
+background: rgb(37,27,27);
+background: linear-gradient(90deg, rgba(37,27,27,1) 0%, rgba(91,71,71,1) 35%, rgba(153,125,125,1) 100%);
+}
+
+h2{
+  font-size: 1.3em;
+
+}
+
+.container{
+  height: 100vh;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background: rgb(126, 105, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 105, 173, 1) 0%,
+    rgba(178, 158, 224, 1) 35%,
+    rgba(219, 206, 249, 1) 100%
+  );
+  width: 65%;
+  margin-right: 29%;
+}

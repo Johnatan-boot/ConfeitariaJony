@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Produtos } from 'src/app/models';
+import { ApiService, CartService } from 'src/app/services';
 
 @Component({
   selector: 'app-table-estoque',
@@ -8,14 +8,46 @@ import { Produtos } from 'src/app/models';
 })
 export class TableEstoqueComponent implements OnInit {
 
-  produtos: Produtos[] = [
-    {_id:'1',produto:'Bolo de Chocolate',quantidade:'2',validade:'28/05/23'},
-    {_id:'2',produto:'Bolo de Baunilha',quantidade:'21',validade:'02/09/23'},
-    {_id:'3',produto:'Bolo de Laranja',quantidade:'17',validade:'11/07/23'}
-  ];
-  constructor() { }
+  public estoque : any = [];
+  public filterCategory : any
+  searchKey:string ="";
+   constructor(private api : ApiService, private cartService : CartService) { }
 
-  ngOnInit(): void {
+
+   ngOnInit(): void {
+
+
+   //LISTAR ITENS DO ESTOQUE
+    this.api.getEstoque()
+    .subscribe((res: any)=>{
+      this.estoque = res;
+      this.filterCategory = res;
+      this.estoque.forEach((a:any) => {
+        if(a.category ===" produto " || a.category ===" quantidade "){
+          a.category =" validade"
+        }
+        Object.assign(a,{quantity:1,total:a.price});
+      });
+      console.log(this.estoque)
+    });
+
+
+  }
+
+  //FILTRAR ITENS DO ESTOQUE
+
+  filter(category:string){
+    this.filterCategory = this.estoque
+    .filter((a:any)=>{
+      if(a.category == category || category==''){
+        return a;
+      }
+    })
+  }
+
+  ///REMOVER ITENS DO ESTOQUE
+  removeItem(estoque: any){
+    this.cartService.removeCartItens(estoque);
   }
 
 }

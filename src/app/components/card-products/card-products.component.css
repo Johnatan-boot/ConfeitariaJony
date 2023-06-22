@@ -10,7 +10,7 @@ img{
   text-shadow: 1px 1px 1px #111111;
   font-family: 'Passions Conflict', cursive, sans-serif;
   position: relative;
-  right: 40px;
+  left: 40px;
   bottom: 70px;
   font-size: 2em;
   font-weight: 600;
@@ -27,12 +27,12 @@ img{
 .col-3{
   position:relative;
   right:110px;
-  
+
 }
 
 .container{
   position: relative;
-  left: 80px;
+  right: 10px;
   width:100%;
 }
 .container-sm {
@@ -121,7 +121,7 @@ div .pg_container{
     font-size: 2em;
     font-weight: 600;
     color: #fff;
-  
+
   }
 
   .container{
@@ -133,7 +133,7 @@ div .pg_container{
   .col-4{
     position:relative;
     right:110px;
-    
+
   }
   .container-sm {
 
@@ -162,6 +162,6 @@ div .pg_container{
     height: 30px;
     width: 60px;
   }
-  
+
 }
 

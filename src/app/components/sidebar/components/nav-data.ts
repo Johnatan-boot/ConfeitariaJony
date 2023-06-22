@@ -20,9 +20,14 @@ export const navbarData = [
     label: 'Orçamentos'
   },
   {
-      routeLink: 'dashboard',
-      icon: 'fa fa-home',
-      label: 'Dashboard'
+      routeLink: 'admin',
+      icon: 'fa fa-lock',
+      label: 'admin'
+  },
+  {
+      routeLink: 'usuarios',
+      icon: 'fa fa-user',
+      label: 'admin'
   },
 
 
@@ -39,7 +44,7 @@ export const navbarData = [
   {
       routeLink: 'products',
       icon: 'fa fa-gift',
-      label: 'Menu with Children',
+      label: 'Products',
       submenuLevel1: [
           {
               routeLink: '',

@@ -1,4 +1,4 @@
-export interface Produtos{
+export interface Estoque{
   _id: string;
   produto:string;
   quantidade:string;

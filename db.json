@@ -31,6 +31,14 @@
 
     ],
 
+    "estoque":[
+      {"_id": 1,"produto":"Bolo de Chocolate","quantidade":"2","validade":"13/05/23"},
+      {"_id": 2,"produto":"Bolo de Baunilha","quantidade":"5","validade":"8/02/23"},
+      {"_id": 4,"produto":"Bolo de Laranja","quantidade":"18","validade":"13/06/23"},
+      {"_id": 5,"produto":"Bolo de coco","quantidade":"48","validade":"15/09/23"},
+      {"_id": 6,"produto":"Bolo de acerola","quantidade":"28","validade":"17/12/23"}
+    ],
+
     "descricao": [
       {
         "title":"Bolo de Chocolate",

@@ -8,6 +8,7 @@ export class CartService {
 
   public cartItemList : any =[]
   public productList = new BehaviorSubject<any>([]);
+  public estoque = new BehaviorSubject<any>([]);
   public search = new BehaviorSubject<string>("");
 
   constructor() { }
@@ -39,6 +40,15 @@ export class CartService {
       }
     })
     this.productList.next(this.cartItemList);
+  }
+
+  removeCartItens(estoque: any){
+    this.cartItemList.map((a:any, index:any)=>{
+      if(estoque.id=== a.id){
+        this.cartItemList.splice(index,1);
+      }
+    })
+    this.estoque.next(this.cartItemList);
   }
   removeAllCart(){
     this.cartItemList = []

@@ -16,4 +16,12 @@ export class ApiService {
       return res;
     }))
   }
+
+  getEstoque(){
+    return this.http.get<any>(
+      "http://localhost:3000/estoque")
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
 }
