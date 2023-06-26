@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatCardModule} from '@angular/material/card';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ToastrModule } from 'ngx-toastr';
+import { SidebarComponent } from './components';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [
-
+   SidebarComponent,
   ],
   imports: [
-    CommonModule,
+
+   CommonModule,
     NgbModule,
     MatCardModule,
     CollapseModule.forRoot(),
@@ -21,6 +23,6 @@ import { ToastrModule } from 'ngx-toastr';
 
 
   ],
-  
+
 })
 export class SidebarModule { }

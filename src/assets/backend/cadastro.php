@@ -35,7 +35,7 @@
         <p class="description description-second">
           or use your email for registration:
         </p>
-        <form class="form" method="POST">
+        <form action="cadastro2.php"  class="form" method="post">
           <label class="label-input" for="">
             <i class="fa fa-user icon-modify"></i>
             <input type="text" placeholder="Name" required />

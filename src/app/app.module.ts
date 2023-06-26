@@ -47,6 +47,7 @@ import { AdminComponent } from './components/pages/admin/admin.component';
 import { UsuariosComponent } from './components/pages/usuarios/usuarios.component';
 import { UsuariosRoutingModule } from './components/pages/usuarios/usuarios-routing.module';
 import { AdminGuard } from './services/auth/admin-guard.service';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -80,8 +81,8 @@ import { AdminGuard } from './services/auth/admin-guard.service';
     ],
   imports: [
     BrowserModule,
-    NgbModule,
-
+    NgModule,
+    ChartModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
